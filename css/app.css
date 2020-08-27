@@ -15375,6 +15375,83 @@ button:focus {
     font-family: 'Quicksand', sans-serif;
     color: #fff; }
 
+.contact-form {
+  overflow: hidden; }
+  .contact-form p.name,
+  .contact-form p.email,
+  .contact-form p.subject {
+    width: 33.333333%;
+    padding: 0 14px;
+    float: left;
+    display: inline-block;
+    margin: 0; }
+    .contact-form p.name span,
+    .contact-form p.email span,
+    .contact-form p.subject span {
+      position: relative; }
+      .contact-form p.name span input,
+      .contact-form p.email span input,
+      .contact-form p.subject span input {
+        padding: 12px 20px;
+        max-width: 500px;
+        border: 1px solid #DEDEDE;
+        margin-bottom: 28px;
+        font-size: 12px;
+        width: 100%;
+        font-weight: normal;
+        max-height: 50px;
+        background: none; }
+      .contact-form p.name span input:focus,
+      .contact-form p.email span input:focus,
+      .contact-form p.subject span input:focus {
+        outline: none; }
+  .contact-form p.name {
+    padding-left: 0; }
+  .contact-form p.subject {
+    padding-right: 0; }
+  .contact-form p.message {
+    clear: both; }
+    .contact-form p.message span {
+      position: relative; }
+      .contact-form p.message span textarea {
+        padding: 15px 20px;
+        border: 1px solid #DEDEDE;
+        width: 100%;
+        height: 120px;
+        font-size: 12px;
+        color: #313131;
+        margin-bottom: 28px;
+        line-height: 20px;
+        font-weight: 500;
+        outline: none;
+        vertical-align: top; }
+  .contact-form p.submit {
+    text-align: center;
+    clear: both; }
+    .contact-form p.submit input {
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif;
+      text-transform: uppercase;
+      border-radius: 0;
+      font-size: 14px;
+      color: #fff;
+      padding: 12px 20px;
+      display: inline-block;
+      background-size: 100% 200%;
+      background-image: linear-gradient(to bottom, #f6701b 50%, #01163a 50%);
+      -webkit-transition: background-position 0.5s;
+      -moz-transition: background-position 0.5s;
+      transition: background-position 0.5s;
+      cursor: pointer;
+      width: auto;
+      min-width: 120px;
+      text-align: center;
+      margin: 0;
+      border: none; }
+    .contact-form p.submit input:hover {
+      background-position: 0 -100%;
+      text-decoration: none; }
+
 @media (max-width: 991px) {
   .navbar-nav {
     display: none !important; }
