@@ -1,5 +1,8 @@
-$main-color: #ff4081;
-$sub-color: #0079B9;
+$main-color: #f6701b;
+$sub-color: #01163a;
+.bg-sub{
+  background-color:lighten($color: $main-color, $amount: 44);
+}
 
 $container-max-widths: (
   sm: 540px,

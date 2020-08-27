@@ -2,12 +2,37 @@
 .navbar-nav {
     display: none !important;
 }
+.main-nav-social {
+    display: none !important;
+}
 
 .navbar #top-search .show-search .close-search {
     right:0px;
     top:5px;
 }
+
+.navbar .container .navbar-brand img {
+    max-height: 78px;
+    padding: 0px 0;
+}
+.sticky{
+    .container{
+        .navbar-toggler{line-height: 52px;}
+        .navbar-brand{
+            img{
+                max-height: 55px;
+            }
+        }
+    }
+}
 .slider-left{
     display: none;
+}
+.copyright{
+    text-align: center;
+    line-height: 30px;
+    .site-by{
+        text-align: center !important;
+    }
 }
 }
