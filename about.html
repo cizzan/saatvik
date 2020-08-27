@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saatvik Foods Dharan</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+    <script>
+        // Wait for window load
+        $(window).on('load', function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <style>
+        /* Paste this css to your style sheet file or under head tag */
+        /* This only works with JavaScript, 
+    if it's not present, don't show loader */
+        .no-js #loader {
+            display: none;
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('img/Comp-1.gif') center no-repeat #fff;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div class="se-pre-con"></div>
+    <!-- Header Area -->
+    <header>
+        <a id="close-sidebar-nav" class="header-6"><i class="fa fa-close"></i></a>
+        <nav id="sidebar-nav" class="header-6" role="navigation">
+
+            <div id="sidebar-nav-logo">
+                <a href="index.html"><img src="img/saatvik_logo.png" alt="Saatvik Foods Dharan"
+                        style="display: inline;"></a>
+            </div>
+
+            <div class="header-social sidebar-nav-social">
+                <div class="inner-header-social">
+                    <a href="https://www.facebook.com/" rel="nofollow" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#" rel="nofollow" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    <a href="#" rel="nofollow" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li><a href="#">Product1</a></li>
+                        <li><a href="#">Product2</a></li>
+                        <li><a href="#">Product3</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="#">In the News</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler header-6" type="button" data-toggle="collapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/saatvik_logo.png" alt="Soledad – Ice Cream">
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">In the News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="main-nav-social penci-social-textcolored">
+                    <div class="inner-header-social">
+                        <a href="https://www.facebook.com/PenciDesign" rel="nofollow" target="_blank"><i
+                                class="penci-faicon fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/PenciDesign" rel="nofollow" target="_blank"><i
+                                class="penci-faicon fa fa-twitter"></i></a>
+                        <a href="#" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-instagram"></i></a>
+                        <a href="#" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-pinterest"></i></a>
+                        <a href="#" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div id="top-search" class="dfdf">
+                    <a class="search-click"><i class="fas fa-search"></i></a>
+                    <div class="show-search">
+                        <form role="search" method="get" id="searchform"
+                            action="http://demosoledad.pencidesign.com/soledad-ice-cream-multipurpose/">
+                            <div>
+                                <input type="text" class="search-input" placeholder="Type and hit enter..." name="s"
+                                    id="s">
+                            </div>
+                        </form> <a class="search-click close-search"><i class="penci-faicon fa fa-close"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Area Ends -->
+
+    <!-- Top Area -->
+
+    <section class="saatvik-top">
+
+        <div class="saatvik-page-heading">
+            <div class="heading-background-overlay"></div>
+            <div class="container saatvik-heading-container">
+                <div class="saatvik-heading-row">
+                    <h1 class="text-center">About Us</h1>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Top Area Ends -->
+
+    <!-- Introduction Area -->
+    <section class=" introduction mb-5 pb-5">
+        <div class="slider-shape-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="shape-fill" opacity="0.33"
+                    d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                </path>
+                <path class="shape-fill" opacity="0.66"
+                    d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                </path>
+                <path class="shape-fill"
+                    d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                </path>
+            </svg>
+        </div>
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="col-md-7">
+
+                    <div class="saatvik-heading-inner">
+                        <h2 class="saatvik-heading-title">Introduction</h2>
+                        <div class="saatvik-heading-content-intro">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, viva la
+                                vida, penci design.<br>
+                                <br>
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                quo minus id quod maxime placeat facere. Sed ut perspiciatis unde
+                                omnis iste.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, viva la
+                                vida, penci design.<br>
+                                <br>
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                quo minus id quod maxime placeat facere. Sed ut perspiciatis unde
+                                omnis iste.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 d-none d-sm-none d-md-block">
+                    <div class="saatvik-image">
+                        <img class="img-fluid" src="img/products.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Introduction Area Ends -->
+<!---saatvik slogn area-->
+<section class="slogan pt-5 pb-5 text-center">
+<h2 class="pt-5 pb-5">"Always Fresh, Always Tasty, Always Saatvik"</h2>
+</section>
+<!-- saatvik slogan area ends -->
+    <!-- Gallery Area -->
+    <section class="saatvik-gallery pt-5 pb-5 bg-light">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-7">
+
+                    <div class="saatvik-heading-inner">
+                        <h2 class="saatvik-heading-title">Message from the CEO</h2>
+                        <div class="saatvik-heading-content-intro">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, viva la
+                                vida, penci design.<br>
+                                <br>
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                quo minus id quod maxime placeat facere. Sed ut perspiciatis unde
+                                omnis iste.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, viva la
+                                vida, penci design.<br>
+                                <br>
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                quo minus id quod maxime placeat facere. Sed ut perspiciatis unde
+                                omnis iste.</p>
+                                <p class="name-ceo">Prashant Agrawal</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 d-none d-sm-none d-md-block">
+                    <div class="saatvik-image">
+                        <img class="img-fluid" src="img/products.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Area Ends -->
+
+    <!-- Why Us Area -->
+    <section class="saatvik-gallery mt-5 pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="saatvik-heading-inner mb-5 text-center">
+                        <h2 class="saatvik-heading-title">Saatvik Factory</h2>
+                        <div class="saatvik-heading-content-intro">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac luctus libero, id
+                                porta justo. Pellentesque rutrum tellus lectus, rutrum finibus nunc posuere nec. Fusce
+                                ac
+                                risus porttitor lectus aliquam volutpat non quis nisl. Integer eget dolor nibh. Nullam
+                                enim
+                                est, fringilla ac est ut, commodo tempus nibh. Ut ultrices turpis odio, quis aliquam
+                                augue
+                                sodales quis. Suspendisse a pharetra nisi, vel sollicitudin nibh. Curabitur tincidunt
+                                vel
+                                erat in aliquet. Aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gallery-area">
+            
+            <div class="col-md-3 p-rl col-sm-6">
+                <div class="gallery-wrapper mb-5">
+                    <div class="gallery-img">
+                        <a href="#"><img src="img/imagea.jpg" alt=""></a>
+                        <div class="gallery-icon">
+                            <a class="image-link" href="img/course-1.jpg"><span class="ti-search"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-rl col-sm-6">
+                <div class="gallery-wrapper mb-5">
+                    <div class="gallery-img">
+                        <a href="#"><img src="img/imagea.jpg" alt=""></a>
+                        <div class="gallery-icon">
+                            <a class="image-link" href="img/course-1.jpg"><span class="ti-search"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-rl col-sm-6">
+                <div class="gallery-wrapper mb-5">
+                    <div class="gallery-img">
+                        <a href="#"><img src="img/imagea.jpg" alt=""></a>
+                        <div class="gallery-icon">
+                            <a class="image-link" href="img/course-1.jpg"><span class="ti-search"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-rl col-sm-6">
+                <div class="gallery-wrapper mb-5">
+                    <div class="gallery-img">
+                        <a href="#"><img src="img/imagea.jpg" alt=""></a>
+                        <div class="gallery-icon">
+                            <a class="image-link" href="img/course-1.jpg"><span class="ti-search"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+
+        </div>
+    </section>
+    <!-- Why Us Area Ends -->
+
+ 
+
+    <footer>
+        <div class="company-info">
+            <div class="slider-shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="shape-fill" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="shape-fill" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="shape-fill"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-4 address">
+                        <h4>Get in Touch</h4>
+                        <ul class="address-bar">
+                            <li><a href=#""><i class="fas fa-map-marker-alt"></i>Punya Marga, Ganeshman Chowk<br> Dharan
+                                    - 13,
+                                    Sunsari, Nepal</a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt"></i>025-521290</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>info@saatvikfoods.com.np</a></li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="col-md-4 quick-links">
+                        <h4>Quick Links</h4>
+                        <ul class="address-bar">
+                            <li><a href=#"">Career</a></li>
+                            <li><a href="#">Complaints and Feedback</a></li>
+                            <li><a href="#">Distributors</a></li>
+                            <li><a href="#">Downloads</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 social">
+                        <h4>Connect With Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#">&copy; 2020 Saatvik Foods Pvt. Ltd.</a>
+                    </div>
+                    <div class="col-md-6 site-by">Site Maintained by: <a href="#">iNepal Creation</a></div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/owl.carousel2/dist/owl.carousel.min.js"></script>
+    <script src="/node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

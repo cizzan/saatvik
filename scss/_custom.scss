@@ -7,6 +7,7 @@ body {
     height: 88px;
     padding: 0;
     background-color: $sub-color;
+    transition: all 0.5s ease;
 
 
     .container {
@@ -18,6 +19,7 @@ body {
             img {
                 max-height: 78px;
                 padding: 10px 0;
+                width: auto;
             }
         }
 
@@ -118,7 +120,7 @@ body {
                     transition: all 0.3s;
                 }
 
-                i.fa-youtube-play:hover {
+                i.fa-youtube:hover {
                     color: #ff0000 !important;
                     transition: all 0.3s;
                 }
@@ -126,9 +128,15 @@ body {
         }
     }
 
+    .dropdown>.dropdown-menu {
+        display: none;
+        transition: 1s all ease;
+
+    }
+
     .dropdown:hover>.dropdown-menu {
         display: block;
-        transition: 1s;
+        transition: 1s all ease;
     }
 
 
@@ -420,7 +428,7 @@ body {
             color: #bd081c !important;
         }
 
-        i.fa-youtube-play {
+        i.fa-youtube {
             color: #ff0000 !important;
         }
     }
@@ -431,9 +439,52 @@ body {
     padding: 0 10px;
 }
 
+.saatvik-page-heading {
+    background-image: url(../img/image1.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 90px 0px 180px 0px;
+    position: relative;
+
+    .heading-background-overlay {
+        background-color: transparent;
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, $main-color 100%);
+        opacity: 0.85;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .saatvik-heading-container {
+
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+
+        .saatvik-heading-row {
+            width: 100%;
+            color: $white;
+            font-size: 15px;
+            text-align: center;
+
+            h1 {
+                color: $sub-color;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
 /* Slider Area*/
 .slider-area {
-    background-image: url(http://demosoledad.pencidesign.com/soledad-ice-cream-multipurpose/wp-content/uploads/sites/63/2019/12/2.jpg);
+    background-image: url(../img/2.jpg);
     background-position: center center;
     background-size: cover;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -602,11 +653,16 @@ body {
         max-width: 570px;
         margin-left: auto;
         margin-right: auto;
+        
     }
 
 
 }
-
+.name-ceo{
+    font-weight: bold;
+    color:$main-color;
+    font-size: 18px;
+}
 .saatvik-button-wrapper {
 
     margin-top: 50px;
@@ -652,8 +708,9 @@ body {
     top: 0;
     z-index: 100;
     border-top: 0;
-    max-height: 60px;
+    height: 60px;
     box-shadow: 0px 1px 5px rgba(190, 190, 190, 0.46);
+    transition: all 0.5s ease;
 
 
     .container {
@@ -1072,22 +1129,110 @@ footer {
         }
     }
 
-    .copyright{
+    .copyright {
         background: $main-color;
-        a{
-            color:$white;
+
+        a {
+            color: $white;
             text-decoration: none;
             transition: 0.5s all ease;
         }
-        a:hover{
-            color:$sub-color;
+
+        a:hover {
+            color: $sub-color;
             transition: 0.5s all ease;
 
         }
-        .site-by{
+
+        .site-by {
             font-family: 'Quicksand', sans-serif;
             text-align: right;
 
         }
+    }
+}
+
+.gallery-area {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+
+    /* gallery-area */
+
+
+.gallery-wrapper {
+  overflow: hidden;
+}.gallery-img{position:relative;}
+.gallery-img>a{position:relative;display:block;}
+.gallery-img>a::before {
+  background: #000000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition:.3s;
+}
+.gallery-wrapper:hover .gallery-img>a::before{opacity:.5;}
+.gallery-img a img {
+  width: 100%;
+  transition: .3s;
+}
+.gallery-wrapper:hover .gallery-img a img{ transform: scale(1.2) rotate(7deg);}
+.gallery-icon {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 55%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  z-index: 999;
+}
+.gallery-icon > a {
+  color: #fff;
+  font-size: 30px;
+  transition:.3s;
+  text-decoration: none;
+  padding: 38%;
+}
+.gallery-icon > a:hover{color:$main-color;}
+.gallery-wrapper:hover .gallery-icon{opacity:1;top:50%;}
+/* course-list-area */
+.course-list-area{}
+.course-list-wrapper{}
+.course-list-img {
+  float: left;
+}
+
+}
+
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//         height: 100%;
+//     width: 100%;
+//     opacity: 0;
+//     transition: .3s ease;
+//     background-color: red;
+// }
+// .overlay:hover{
+//     opacity:0.7;
+// }
+
+
+button:focus {
+    outline: none;
+}
+.slogan{
+    background: $main-color;
+    h2{
+        font-family: 'Quicksand', sans-serif;
+        color: $white;
     }
 }

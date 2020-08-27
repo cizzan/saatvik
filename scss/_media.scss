@@ -5,15 +5,21 @@
 .main-nav-social {
     display: none !important;
 }
-
+.navbar #top-search{
+    padding-right: 10px;
+}
 .navbar #top-search .show-search .close-search {
-    right:0px;
+    right:10px;
     top:5px;
 }
 
 .navbar .container .navbar-brand img {
     max-height: 78px;
     padding: 0px 0;
+}
+.navbar #top-search .show-search #searchform input.search-input {
+    padding-left: 10px;
+    
 }
 .sticky{
     .container{

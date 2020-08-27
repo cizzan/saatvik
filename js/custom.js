@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.menu li ul').parent().addClass('hasChild');
     $(".hasChild ul").hide();
     $(".hasChild").click(function(){
-        $(this).children("ul").stop(true,true).slideToggle("fast"),
+        $(this).children("ul").slideToggle("fast"),
         $(this).toggleClass("dropdown-active");
     }); 
 
@@ -38,11 +38,15 @@ $(document).ready(function () {
         setTimeout(function(){
           _d.toggleClass('show', _d.is(':hover'));
           $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
-        },300);
+        },1000);
       });
       
       /* this is not needed, just prevents page reload when a dd link is clicked */
-      $('.dropdown a').on('click tap', e => e.preventDefault())
+      //$('.dropdown>a').on('click tap', e => e.preventDefault())
+      $('.navbar .dropdown > a').click(function() {
+        location.href = this.href;
+      });
+      $('.hasChild>a').on('click tap', e => e.preventDefault())
 
 
 
@@ -110,6 +114,37 @@ $(document).ready(function () {
         
         
     });
+
+
+    $('.image-link').magnificPopup({
+          
+        type: 'image',
+        // other options
+        //mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+        zoom: {
+          enabled: true, // By default it's false, so don't forget to enable it
+      
+          duration: 300, // duration of the effect, in milliseconds
+          easing: 'ease-in-out', // CSS transition easing function
+      
+          // The "opener" function should return the element from which popup will be zoomed in
+          // and to which popup will be scaled down
+          // By defailt it looks for an image tag:
+          opener: function(openerElement) {
+            // openerElement is the element on which popup was initialized, in this case its <a> tag
+            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+            return openerElement.is('span') ? openerElement : openerElement.find('span');
+          }
+        },
+        gallery: {
+            enabled: true,
+            tPrev: '@T("Media.MagnificPopup.Previous")',
+            tNext: '@T("Media.MagnificPopup.Next")',
+            
+        },
+        
+      });
 });
 
 
